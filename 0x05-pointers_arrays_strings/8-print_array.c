@@ -9,7 +9,11 @@ void print_array(int *a, int n)
 {
 	int i;
 
-	if (n >= 0)
+	if (n <= 0)
+	{
+		printf("  ");
+	}
+	else
 	{
 		if (n == 1)
 		{
