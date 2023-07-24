@@ -2,7 +2,8 @@
 #include <stdio.h>
 /**
  * swap_int - swaps the values of two integers.
- * @c: an integer.
+ * @a: the firt integer.
+ * @b: the second integer.
  */
 void swap_int(int *a, int *b)
 {
