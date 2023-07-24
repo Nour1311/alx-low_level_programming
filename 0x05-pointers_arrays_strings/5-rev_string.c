@@ -6,23 +6,19 @@
  */
 void rev_string(char *s)
 {
-	char *rvrs = NULL;
+	char rvrs = s[0];
 	int i = 0;
 	int j = 0;
 
-	*rvrs = *s;
-	while (rvrs[j] != '\0')
+	while (s[j] != '\0')
 	{
 		j++;
 	}
-	while (rvrs[i] != '\0')
+	for (i = 0; i < j; i++)
 	{
-		if (j >= 0)
-		{
-			rvrs[i] = s[j];
-			j--;
-		}
-		i++;
+		j--;
+		rvrs = s[i];
+		s[i] = s[j];
+		s[j] = rvrs;
 	}
-	s = rvrs;
 }
