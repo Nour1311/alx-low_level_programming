@@ -7,32 +7,13 @@
 void puts2(char *str)
 {
 	int i;
-	int x = 0;
-	int y;
-	int j = 0;
-	char c = str[0];
-	int *tab = NULL;
 
-	while (str[j] != '\0')
+	for (i = 0; str[j] != '\0'; i++)
 	{
-		c = str[j];
-		c = getchar();
-		tab[j] = c;
-		j++;
-	}
-	for (i = 0; i < 127; i++)
-	{
-		for (y = 0; y < j; y++)
+		if (i % 2 != 1)
 		{
-			if (i == tab[y])
-			{
-				x = 1;
-			}
-			y++;
+			putchar(str[i]);
 		}
-		if (x == 0)
-		{
-			putchar(i);
-		}
+		putchar('\n');
 	}
 }
