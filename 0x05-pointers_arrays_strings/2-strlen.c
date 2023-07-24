@@ -13,7 +13,7 @@ int _strlen(char *s)
 
 	while (*p != '\0')
 	{
-		*p++;
+		p++;
 	}
 	return (p - s);
 }
