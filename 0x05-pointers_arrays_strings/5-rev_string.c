@@ -18,8 +18,8 @@ void rev_string(char *s)
 	{
 		if (j >= 0)
 		{
-			j--;
 			rvrs[i] = s[j];
+			j--;
 		}
 		i++;
 	}
