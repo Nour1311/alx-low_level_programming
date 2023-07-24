@@ -11,7 +11,7 @@ void puts2(char *str)
 	int y;
 	int j = 0;
 	char c = str[0];
-	int tab[];
+	int *tab = NULL;
 
 	while (str[j] != '\0')
 	{
