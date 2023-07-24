@@ -10,7 +10,7 @@ void puts_half(char *str)
 	int i = 0;
 	int j = 0;
 
-	while (s[j] != '\0')
+	while (str[j] != '\0')
 	{
 		j++;
 	}
@@ -19,14 +19,14 @@ void puts_half(char *str)
 	{
 		for (i = length_of_the_string / 2; i < j; i++)
 		{
-			putchar(s[i]);
+			putchar(str[i]);
 		}
 	}
 	else
 	{
 		for (i = (length_of_the_string - 1) / 2; i < j; i++)
 		{
-			putchar(s[i]);
+			putchar(str[i]);
 		}
 	}
 	putchar('\n');
