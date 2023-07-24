@@ -5,7 +5,7 @@
  * @n: an integer witch is the number of array's elements.
  * @a: pointer to an array.
  */
-void print_array(int *a, int n);
+void print_array(int *a, int n)
 {
 	int i;
 
