@@ -9,13 +9,13 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	char *temporair = *dest;
+	char *temporair = dest;
 
 	while (*temporair != '\0')
 	{
 		temporair++;
 	}
-	while (src < n && scr != '\0')
+	while (*src != '\0' && src < n)
 	{
 		*temporair = *src;
 		temporair++;
