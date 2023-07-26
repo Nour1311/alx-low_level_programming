@@ -15,11 +15,12 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		temporair++;
 	}
-	while (*src != '\0' && src < n)
+	while (*src != '\0' && n > 0)
 	{
 		*temporair = *src;
 		temporair++;
 		src++;
+		n--;
 	}
 	*temporair = '\0';
 	return (dest);
