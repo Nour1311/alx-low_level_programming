@@ -15,7 +15,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		temporair++;
 	}
-	while (src < n || scr != '\0')
+	while (src <= n || scr != '\0')
 	{
 		*temporair = *src;
 		temporair++;
