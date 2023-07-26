@@ -10,6 +10,7 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	char *temporair = dest;
+	char *pointer = NULL;
 
 	while (*temporair != '\0')
 	{
@@ -21,6 +22,6 @@ char *_strncat(char *dest, char *src, int n)
 		temporair++;
 		src++;
 	}
-	*temporair = *dest;
-	return (dest);
+	*pointer = dest;	
+	return (*pointer);
 }
