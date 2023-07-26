@@ -21,6 +21,6 @@ char *_strncat(char *dest, char *src, int n)
 		temporair++;
 		src++;
 	}
-	*temporair = dest;
+	*temporair = *dest;
 	return (dest);
 }
