@@ -9,7 +9,7 @@ char *string_toupper(char *s)
 {
 	char *temporaire = s;
 
-	for (*temporair != '\0')
+	while (*temporair != '\0')
 	{
 		if (*temporair >= 'a' && *temporair <= 'z')
 		{
