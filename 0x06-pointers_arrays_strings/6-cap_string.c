@@ -21,12 +21,12 @@ char *cap_string(char *s)
 				sep++;
 			}
 		}
+		temporair++;
 		if (sep == 1 && *temporair >= 'a' && *temporair <= 'z')
 		{
 			*temporair = *temporair - 'a' + 'A';
 		}
 		sep--;
-		temporair++;
 	}
 	return (s);
 }
