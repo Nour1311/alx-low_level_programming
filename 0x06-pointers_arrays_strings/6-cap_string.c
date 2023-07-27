@@ -10,7 +10,7 @@ char *cap_string(char *s)
 	int i;
 	int sep = 1;
 	char *temporair = s;
-	char separateur[] = " \t\n,;!?(){}\""
+	char separateur = " \t\n,;!?(){}\""
 
 	while (*temporair != '\0')
 	{
