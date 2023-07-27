@@ -19,7 +19,6 @@ char *cap_string(char *s)
 			if (*temporair == separateur[i])
 			{
 				sep++;
-				temporair++;
 				break;
 			}
 		}
