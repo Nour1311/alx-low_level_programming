@@ -18,6 +18,10 @@ char *_strncpy(char *dest, char *src, int n)
 		src++;
 		n--;
 	}
+	while (*temporair != '\0')
+	{
+		temporair++;
+	}
 	*temporair = '\0';
 	return (dest);
 }
