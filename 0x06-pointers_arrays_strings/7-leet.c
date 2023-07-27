@@ -7,7 +7,7 @@
  * @n: an integer.
  * Return: a new string.
  */
-char *leet(char *)
+char *leet(char *s)
 {
 	int stringCount, leetCount;
 	char leetLetters[] = "aAeEoOtTlL";
