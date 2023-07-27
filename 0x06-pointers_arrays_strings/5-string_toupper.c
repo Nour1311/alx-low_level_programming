@@ -7,7 +7,7 @@
  */
 char *string_toupper(char *s)
 {
-	char *temporaire = s;
+	char *temporair = s;
 
 	while (*temporair != '\0')
 	{
