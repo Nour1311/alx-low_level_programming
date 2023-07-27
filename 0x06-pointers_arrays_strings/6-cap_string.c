@@ -8,7 +8,7 @@
 char *cap_string(char *s)
 {
 	int i;
-	int sep = 0;
+	int sep = 1;
 	char *temporair = s;
 	char separateur[] = "\t\n,;.!?\"(){}";
 
