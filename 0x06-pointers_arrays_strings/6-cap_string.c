@@ -22,7 +22,7 @@ char *cap_string(char *s)
 				break;
 			}
 		}
-		if (sep > 1 && *temporair >= 'a' && *temporair <= 'z')
+		if (sep > 0 && *temporair >= 'a' && *temporair <= 'z')
 		{
 			*temporair = *temporair - 'a' + 'A';
 		}
