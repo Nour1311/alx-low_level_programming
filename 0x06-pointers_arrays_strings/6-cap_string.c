@@ -9,24 +9,23 @@ char *cap_string(char *s)
 {
 	int i;
 	int sep = 1;
-	char *temporair = s;
+	int cpt = 0;
 	char separateur[] = " \t\n,;!?(){}\"";
 
-	while (*temporair != '\0')
+	while (s[cpt] != '\0')
 	{
 		for (i = 0; separateur[i] != '\0'; i++)
 		{
-			if (*temporair == separateur[i])
+			if (s[cpt] == separateur[i])
 			{
 				sep++;
-				break;
 			}
 		}
-		if (sep > 0 && *temporair >= 'a' && *temporair <= 'z')
+		if (sep > 0 && s[cpt] >= 'a' && s[cpt] <= 'z')
 		{
-			*temporair = *temporair - 'a' + 'A';
+			s[cpt] = s[cpt] - 'a' + 'A';
 		}
-		temporair++;
+		cpt++;
 		sep = 0;
 	}
 	return (s);
