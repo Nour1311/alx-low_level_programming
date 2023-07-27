@@ -1,10 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strncpy - copies a string.
- * @src: a string.
- * @dest: a string.
- * @n: an integer.
+ * leet - encodes a string.
+ * @s: a string.
  * Return: a new string.
  */
 char *leet(char *s)
