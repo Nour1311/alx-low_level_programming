@@ -26,7 +26,7 @@ char *cap_string(char *s)
 		{
 			*temporair = *temporair - 'a' + 'A';
 		}
-		sep--;
+		sep = 0;
 	}
 	return (s);
 }
