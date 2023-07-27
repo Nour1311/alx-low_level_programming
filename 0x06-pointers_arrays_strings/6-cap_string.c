@@ -10,18 +10,16 @@ char *cap_string(char *s)
 	int i;
 	int sep = 1;
 	char *temporair = s;
-	char separateur[] = "\t\n,;.!?\"(){}";
+	char separateur[] = " \t\n,;!?(){}\""
 
 	while (*temporair != '\0')
 	{
 		for (i = 0; separateur[i] != '\0'; i++)
+		if (*temporair == separateur[i])
 		{
-			if (*temporair == separateur[i])
-			{
-				sep++;
-				temporair++;
-				break;
-			}
+			sep++;
+			temporair++;
+			break;
 		}
 		if (sep == 1 && *temporair >= 'a' && *temporair <= 'z')
 		{
