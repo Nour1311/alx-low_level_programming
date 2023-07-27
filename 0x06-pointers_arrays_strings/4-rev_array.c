@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * reverse_array - reverses all elements of an array.
- * @a: an integer.
+ * @a: an array of integer.
  * @n: an integer.
  */
 void reverse_array(int *a, int n)
@@ -11,24 +11,11 @@ void reverse_array(int *a, int n)
 	int i = 0;
 	int t = 0;
 
-	if (n % 2 == 0)
+	for (j = n - 1; j > n / 2; j--)
 	{
-		for (j = n - 1; j >= n / 2; j--)
-		{
-			t = a[i];
-			a[i] = a[j];
-			a[j] = t;
-			i++;
-		}
-	}
-	else
-	{
-		for (j = n - 1; j > (n + 1) / 2; j--)
-		{
-			t = a[i];
-			a[i] = a[j];
-			a[j] = t;
-			i++;
-		}
+		t = a[i];
+		a[i] = a[j];
+		a[j] = t;
+		i++;
 	}
 }
