@@ -15,11 +15,13 @@ char *cap_string(char *s)
 	while (*temporair != '\0')
 	{
 		for (i = 0; separateur[i] != '\0'; i++)
-		if (*temporair == separateur[i])
 		{
-			sep++;
-			temporair++;
-			break;
+			if (*temporair == separateur[i])
+			{
+				sep++;
+				temporair++;
+				break;
+			}
 		}
 		if (sep == 1 && *temporair >= 'a' && *temporair <= 'z')
 		{
