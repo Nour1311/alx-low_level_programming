@@ -9,7 +9,7 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *temporair = dest
+	char *temporair = NULL;
 
 	while (*src != '\0' && n > 0)
 	{
@@ -20,14 +20,19 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	if (*src == '\0')
 	{
+		dest = src;
 	       	return (dest);
 	}
 	else
 	{
-		while (*temporair != '\0')
+		while (*dest != '\0')
 		{
+			*temporair = *dest;
 			temporair++;
+			dest++;
 		}
-		*temporair = '\0';
-		return (dest);
+		*dest = src;
+                return (dest);
+
+	}
 }
