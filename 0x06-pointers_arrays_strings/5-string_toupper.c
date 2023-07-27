@@ -11,9 +11,9 @@ char *string_toupper(char *s)
 
 	for (*temporair != '\0')
 	{
-		if (s[temporair] >= 'a' && s[temporair] <= 'z')
+		if (*temporair >= 'a' && *temporair <= 'z')
 		{
-			s[temporair] = s[temporair] - 'a' + 'A';
+			*temporair = *temporair - 'a' + 'A';
 		}
 		temporair++;
 	}
