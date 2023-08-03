@@ -7,7 +7,7 @@
  * @y: an integer.
  * Return: the  result.
  */
-int sqrt(int x, float y)
+int sqrrt(int x, int y)
 {
 	if (x == (y * y))
 	{
@@ -21,7 +21,7 @@ int sqrt(int x, float y)
 		}
 		else
 		{
-			return (sqrt(x, y + 1));
+			return (sqrrt(x, y + 1));
 		}
 	}
 }
@@ -38,6 +38,6 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (sqrt(n, 0));
+		return (sqrrt(n, 0));
 	}
 }
