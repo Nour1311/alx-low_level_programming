@@ -10,7 +10,7 @@ int factorial(int n)
 {
 	if (n < 0)
 	{
-		break;
+		return (-1);	
 	}
 	else
 	{
