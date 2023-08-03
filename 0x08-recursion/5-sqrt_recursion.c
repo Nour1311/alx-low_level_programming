@@ -2,26 +2,26 @@
 #include <stdio.h>
 
 /**
- * _recursion -  returns the value of x raised to the power of y.
+ * sqrt -  returns the value the sqrt and accept 2 parametres.
  * @x: an integer.
  * @y: an integer.
- * Return: the the result.
+ * Return: the  result.
  */
-int _recursion(int x, float y)
+int sqrt(int x, float y)
 {
-	if (y < 0)
+	if (x == (y * y))
 	{
-		return (-1);
+		return (y);
 	}
 	else
 	{
-		if (y == 0)
+		if ((y * y) >= x)
 		{
-			return (1);
+			return (-1);
 		}
 		else
 		{
-			return (x * _recursion(x, y - 1));
+			return (sqrt(x, y + 1));
 		}
 	}
 }
@@ -38,6 +38,6 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (_recursion(n, 0.5));
+		return (sqrt(n, 0));
 	}
 }
