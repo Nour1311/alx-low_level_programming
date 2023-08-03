@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * sqrt -  returns the value the sqrt and accept 2 parametres.
+ * sqrrt -  returns the value the sqrt and accept 2 parametres.
  * @x: an integer.
  * @y: an integer.
  * Return: the  result.
