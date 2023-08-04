@@ -45,5 +45,5 @@ int my_palindrome(int i, int l, char *s)
  */
 int is_palindrome(char *s)
 {
-	return (my_palindrome(0, lenght(s) - 1, s));
+	return (my_palindrome(0, length(s) - 1, s));
 }
