@@ -12,6 +12,7 @@ int length(char *s)
 		return (1 + length(s++));
 	}
 }
+
 /**
  * my_palindrome - checks if the string is palindrome
  * @i: is an index
@@ -38,6 +39,7 @@ int my_palindrome(int i, int l, char *s)
 	}
 	return (1);
 }
+
 /**
  * is_palindrome - Checks if a string is a palindrome.
  * @s: is the string.
