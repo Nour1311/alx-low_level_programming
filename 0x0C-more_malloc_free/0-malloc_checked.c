@@ -7,5 +7,7 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	return (malloc(malloc(b)));
+	int *p = '\0';
+	p = malloc(b)
+	return (p);
 }
