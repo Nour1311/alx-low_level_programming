@@ -3,6 +3,6 @@
 
 int _putchar(char c);
 int _atoi(char *s);
-int main(int argc, char *argv[]);
+int main(int __attribute__((__unused__)) argc, char *argv[]);
 
 #endif
