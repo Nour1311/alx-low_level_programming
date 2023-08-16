@@ -7,5 +7,5 @@
  */
 void  main_args(int argc, char *argv[] __attribute__((__unused__)))
 {
-	printf("%d\n", argc);
+	printf("%d\n", argc - 1);
 }
