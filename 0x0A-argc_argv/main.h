@@ -3,6 +3,6 @@
 
 int _putchar(char c);
 int main(int argc __attribute__((__unused__)), char *argv[]);
-int main_args(int argc, char *argv[] __attribute__((__unused__)));
+int main_args(int argc);
 
 #endif
