@@ -5,6 +5,7 @@
  * print_numbers - prints numbers.
  * @separator: string separates numbers.
  * @n: number of numbers.
+ * Return: always 0.
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -20,4 +21,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	printf("\n");
 	va_end(args);
+	return (0);
 }
