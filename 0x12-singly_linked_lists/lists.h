@@ -4,7 +4,7 @@
 /**
  * struct l - singly linked list
  * @s: string - (malloc'ed string)
- * @l: length of the string
+ * @length: length of the string
  * @next: points to the next node
  *
  * Description: singly linked list node structure
@@ -13,7 +13,7 @@
 typedef struct l
 {
 	char *s;
-	unsigned int l;
+	unsigned int length;
 	struct l *next;
 } list_t;
 

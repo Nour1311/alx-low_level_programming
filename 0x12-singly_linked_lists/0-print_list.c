@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
 #include "lists.h"
 
@@ -17,7 +15,7 @@ size_t print_list(const list_t *h)
 		if (!h->s)
 			printf("[0] (nil)\n");
 		else
-			printf("[%u] %s\n", h->l, h->s);
+			printf("[%u] %s\n", h->length, h->s);
 		h = h->next;
 		node++;
 	}
