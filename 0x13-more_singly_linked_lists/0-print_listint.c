@@ -2,7 +2,7 @@
 /**
  * print_listint - prints all elements of a list.
  * @h: a pointer to a liste.
- * Return: a size_t value
+ * Return: the size of the list
  */
 size_t print_listint(const listint_t *h)
 {
