@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <string.h>
-
 /**
  * print_listint - prints all elements of a list.
  * @h: a pointer to a liste.
